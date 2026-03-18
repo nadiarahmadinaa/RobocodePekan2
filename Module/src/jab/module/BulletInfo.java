@@ -1,17 +1,25 @@
-package jab.module;
+package jab.module; 
 
-import robocode.Bullet;
+import robocode.Bullet; 
 
 /**
  * Bullet info
  * 
  * @author jab
  */
-public class BulletInfo {
+public  class  BulletInfo {
+	
 
 	public Bullet bullet;
+
+	
 	public int timeFire;
+
+	
 	public String targeting;
+
+	
 	public String toName;
+
 
 }

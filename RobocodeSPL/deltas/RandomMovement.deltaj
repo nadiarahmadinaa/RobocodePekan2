@@ -1,8 +1,7 @@
- configuration delta "RandomMovement"
-	dialect <http://www.emftext.org/java>
-		creates <jab/movement/RandomMovement.java>
-		{
-	addClassifier(<resource:jab/movement/RandomMovement.java>, "package jab.movement;
+delta RandomMovement {
+
+	adds {
+		package jab.movement;
 
 		import jab.module.Module;
 		import jab.module.Movement;
@@ -19,8 +18,8 @@
 
 			public void move() {
 				if (moveCount <= 0) {
-					moveDirection = (Math.random() > 0.5) ?1 : -1;
-					turnDirection = (Math.random() > 0.5) ?1 : -1;
+					moveDirection = (Math.random() > 0.5) ? 1 : -1;
+					turnDirection = (Math.random() > 0.5) ? 1 : -1;
 					moveCount = (int) (Math.random() * 20) + 10;
 				}
 				moveCount--;
@@ -28,6 +27,7 @@
 				bot.setAhead(moveDirection * 100);
 				bot.setTurnRight(turnDirection * (Math.random() * 30 + 10));
 			}
-		}");
+		}
 	}
-	
+
+}

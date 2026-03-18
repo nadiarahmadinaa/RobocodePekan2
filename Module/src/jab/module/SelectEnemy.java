@@ -1,19 +1,25 @@
-package jab.module;
+package jab.module; 
 
 /**
  * Select enemy
  * 
- * @author jab
+ * @author jabier.martinez
  */
-public abstract class SelectEnemy extends Part {
+public abstract  class  SelectEnemy  extends Part {
+	
 
 	public Module bot;
+
+	
 
 	public SelectEnemy(Module bot) {
 		this.bot = bot;
 	}
 
+	
+
 	public void select() {
 	}
+
 
 }

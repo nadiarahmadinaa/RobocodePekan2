@@ -1,21 +1,24 @@
-package jab.selectEnemy;
+package jab.selectEnemy; 
 
-import java.util.Iterator;
+import java.util.Iterator; 
 
-import jab.module.BotInfo;
-import jab.module.Module;
-import jab.module.SelectEnemy;
+import jab.module.BotInfo; 
+import jab.module.Module; 
+import jab.module.SelectEnemy; 
 
 /**
  * Select the closest enemy
  * 
  * @author jab
  */
-public class Closest extends SelectEnemy {
+public  class  Closest  extends SelectEnemy {
+	
 
 	public Closest(Module bot) {
 		super(bot);
 	}
+
+	
 
 	public void select() {
 		Iterator<BotInfo> iterator = bot.botsInfo.values().iterator();
@@ -30,5 +33,6 @@ public class Closest extends SelectEnemy {
 		}
 		bot.enemy = selected;
 	}
+
 
 }

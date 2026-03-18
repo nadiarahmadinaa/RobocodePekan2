@@ -1,61 +1,94 @@
-package jab.module;
+package jab.module; 
 
-import robocode.*;
-import robocode.util.Utils;
+import robocode.*; 
+import robocode.util.Utils; 
 
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Vector;
+import java.util.Enumeration; 
+import java.util.Hashtable; 
+import java.util.Iterator; 
+import java.util.Vector; 
 
-import java.awt.Color;
-import java.awt.Graphics2D;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseEvent;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.io.IOException;
+import java.awt.Color; 
+import java.awt.Graphics2D; 
+import java.awt.event.InputEvent; 
+import java.awt.event.KeyEvent; 
+import java.awt.event.MouseEvent; 
+import java.awt.geom.Point2D; 
+import java.awt.geom.Rectangle2D; 
+import java.io.IOException; 
 
 /**
  * Module 1.0.0
  * 
  * @author jab
  */
-public abstract class Module extends TeamRobot {
+public abstract  class  Module  extends TeamRobot {
+	
 
 	public static Rectangle2D.Double battleField;
+
+	
 	public final double BOT_WIDTH = 36;
 
+	
+
 	public static String[] enemyNumAssignation;
+
+	
 	public static int totalNumOfEnemies;
+
+	
 
 	// Bot's parts
 	public Radar radar;
+
+	
 	public Targeting targeting;
+
+	
 	public Movement movement;
+
+	
 	public Gun gun;
+
+	
 	public SelectEnemy selectEnemy;
+
+	
 	public Vector<Special> specials = new Vector<Special>();
+
+	
 
 	// The power of the next bullet
 	public double bulletPower;
 
+	
+
 	// The current BotInfo
 	public BotInfo enemy = null;
 
+	
+
 	// A Hash-table of all the scanned Enemies
 	public Hashtable<String, BotInfo> botsInfo = new Hashtable<String, BotInfo>();
+
+	
 
 	// A Vector of all the fired bullets
 	// public Vector<BulletInfo> bullets = new Vector<BulletInfo>();
 	public Vector<BulletInfoEnemy> enemyBullets = new Vector<BulletInfoEnemy>();
 
+	
+
 	// Team leader
 	public static boolean teamLeader = false;
 
+	
+
 	// Debug
 	private static int debugOption;
+
+	
 
 	public void run() {
 		setAdjustRadarForRobotTurn(true);
@@ -90,9 +123,15 @@ public abstract class Module extends TeamRobot {
 		}
 	}
 
+	
+
 	protected abstract void selectBehavior();
 
+	
+
 	protected abstract void initialize();
+
+	
 
 	private void updateEnemyPositions() {
 		Rectangle2D.Double walkableBattleField = new Rectangle2D.Double(BOT_WIDTH / 2 - 3, BOT_WIDTH / 2 - 3,
@@ -112,6 +151,8 @@ public abstract class Module extends TeamRobot {
 		}
 	}
 
+	
+
 	private void executeBehavior() {
 		selectEnemy.select();
 		radar.scan();
@@ -123,6 +164,8 @@ public abstract class Module extends TeamRobot {
 			i.next().doIt();
 		execute();
 	}
+
+	
 
 	private void listenEvent(Event e) {
 		if (selectEnemy != null) {
@@ -137,6 +180,8 @@ public abstract class Module extends TeamRobot {
 				i.next().listen(e);
 		}
 	}
+
+	
 
 	private void listenInputEvent(InputEvent e) {
 		if (selectEnemy != null)
@@ -156,6 +201,8 @@ public abstract class Module extends TeamRobot {
 				special.listenInput(e);
 		}
 	}
+
+	
 
 	public void registerBullet(Bullet bullet) {
 		if (bullet != null) {
@@ -183,6 +230,8 @@ public abstract class Module extends TeamRobot {
 		}
 	}
 
+	
+
 	private void updateEnemyBullets() {
 		Enumeration<BulletInfoEnemy> i = enemyBullets.elements();
 		while (i.hasMoreElements()) {
@@ -195,14 +244,20 @@ public abstract class Module extends TeamRobot {
 		}
 	}
 
+	
+
 	public void activate(Special special) {
 		if (!specials.contains(special))
 			specials.add(special);
 	}
 
+	
+
 	public void deactivate(Special special) {
 		specials.remove(special);
 	}
+
+	
 
 	public void onScannedRobot(ScannedRobotEvent e) {
 		if (!isTeammate(e.getName())) {
@@ -250,6 +305,8 @@ public abstract class Module extends TeamRobot {
 		listenEvent(e);
 	}
 
+	
+
 	// Handling the custom event
 	public void onCustomEvent(CustomEvent e) {
 		Condition condition = e.getCondition();
@@ -268,17 +325,25 @@ public abstract class Module extends TeamRobot {
 		listenEvent(e);
 	}
 
+	
+
 	public void onHitByBullet(HitByBulletEvent e) {
 		listenEvent(e);
 	}
+
+	
 
 	public void onHitRobot(HitRobotEvent e) {
 		listenEvent(e);
 	}
 
+	
+
 	public void onHitWall(HitWallEvent e) {
 		listenEvent(e);
 	}
+
+	
 
 	public void onBulletHit(BulletHitEvent e) {
 		listenEvent(e);
@@ -301,6 +366,8 @@ public abstract class Module extends TeamRobot {
 		}
 	}
 
+	
+
 	public void onBulletHitBullet(BulletHitBulletEvent e) {
 		listenEvent(e);
 
@@ -322,9 +389,13 @@ public abstract class Module extends TeamRobot {
 		}
 	}
 
+	
+
 	public void onBulletMissed(BulletMissedEvent e) {
 		listenEvent(e);
 	}
+
+	
 
 	public void onRobotDeath(RobotDeathEvent e) {
 		listenEvent(e);
@@ -332,18 +403,26 @@ public abstract class Module extends TeamRobot {
 		selectEnemy.select();
 	}
 
+	
+
 	public void onWin(WinEvent e) {
 		listenEvent(e);
 	}
+
+	
 
 	public void onDeath(DeathEvent e) {
 		listenEvent(e);
 	}
 
+	
+
 	public void onSkippedTurn(SkippedTurnEvent e) {
 		System.out.println("SKIPPED TURN!!!!!!!");
 		listenEvent(e);
 	}
+
+	
 
 	public void onKeyPressed(KeyEvent e) {
 		int key = e.getKeyCode() - 48;
@@ -353,21 +432,31 @@ public abstract class Module extends TeamRobot {
 		listenInputEvent(e);
 	}
 
+	
+
 	public void onKeyReleased(KeyEvent e) {
 		listenInputEvent(e);
 	}
+
+	
 
 	public void onMouseMoved(MouseEvent e) {
 		listenInputEvent(e);
 	}
 
+	
+
 	public void onMousePressed(MouseEvent e) {
 		listenInputEvent(e);
 	}
 
+	
+
 	public void onMouseReleased(MouseEvent e) {
 		listenInputEvent(e);
 	}
+
+	
 
 	public void onPaint(Graphics2D g) {
 		g.setColor(Color.white);
@@ -428,6 +517,8 @@ public abstract class Module extends TeamRobot {
 		}
 	}
 
+	
+
 	public void onMessageReceived(MessageEvent e) {
 		if (e.getMessage() instanceof BotInfo) {
 			BotInfo botInfo = (BotInfo) e.getMessage();
@@ -456,6 +547,8 @@ public abstract class Module extends TeamRobot {
 		listenEvent(e);
 	}
 
+	
+
 	private void broadCastMyInfo() {
 		BotInfo me = new BotInfo();
 		me.teammate = true;
@@ -478,6 +571,8 @@ public abstract class Module extends TeamRobot {
 		}
 	}
 
+	
+
 	private void assignNumToEnemy(String enemyName) {
 		for (int i = 0; i < enemyNumAssignation.length; i++) {
 			if (enemyNumAssignation[i] == null) {
@@ -487,6 +582,8 @@ public abstract class Module extends TeamRobot {
 		}
 	}
 
+	
+
 	public int getEnemyAssignedNum(String enemyName) {
 		for (int i = 0; i < enemyNumAssignation.length; i++) {
 			if (enemyNumAssignation[i].equals(enemyName))
@@ -494,6 +591,8 @@ public abstract class Module extends TeamRobot {
 		}
 		return 0;
 	}
+
+	
 
 	public int getCurrentRoundScannedEnemies() {
 		int counter = 0;
@@ -505,6 +604,8 @@ public abstract class Module extends TeamRobot {
 		}
 		return counter;
 	}
+
+	
 
 	public int getCurrentNumberOfEnemies() {
 		int counter = 0;
@@ -518,6 +619,8 @@ public abstract class Module extends TeamRobot {
 		return counter;
 	}
 
+	
+
 	public int getCurrentNumberOfTeamMates() {
 		int counter = 0;
 		Enumeration<BotInfo> enemies = botsInfo.elements();
@@ -529,6 +632,8 @@ public abstract class Module extends TeamRobot {
 		}
 		return counter;
 	}
+
+	
 
 	public int getCurrentNumberDroidEnemies() {
 		int counter = 0;
@@ -542,6 +647,8 @@ public abstract class Module extends TeamRobot {
 		return counter;
 	}
 
+	
+
 	public BotInfo getEnemiesLeader() {
 		Enumeration<BotInfo> enemies = botsInfo.elements();
 		while (enemies.hasMoreElements()) {
@@ -552,6 +659,8 @@ public abstract class Module extends TeamRobot {
 		}
 		return null;
 	}
+
+	
 
 	public BotInfo getTeamLeader() {
 		Enumeration<BotInfo> enemies = botsInfo.elements();
@@ -564,6 +673,8 @@ public abstract class Module extends TeamRobot {
 		return null;
 	}
 
+	
+
 	public boolean isTheSameBot(String name1, String name2) {
 		if (name1.endsWith(")") && name2.endsWith(")")) {
 			name1 = name1.substring(0, name1.lastIndexOf("("));
@@ -575,16 +686,24 @@ public abstract class Module extends TeamRobot {
 		return false;
 	}
 
+	
+
 	public int getNumberOfEnemies() {
 		return getOthers() - (getTeammates() == null ? 0 : getTeammates().length);
 	}
+
+	
 
 	public int getNumberOfTeamMates() {
 		return (getTeammates() == null ? 0 : getTeammates().length);
 	}
 
+	
+
 	public double getBearing(Point2D.Double botInfo) {
 		double thetaFireTime = Utils.normalAbsoluteAngle(Math.atan2(botInfo.x - getX(), botInfo.y - getY()));
 		return Utils.normalRelativeAngle(thetaFireTime - getHeadingRadians());
 	}
+
+
 }

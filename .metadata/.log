@@ -6934,3 +6934,2132 @@ java.lang.NullPointerException
 	at org.deltaecore.suite.mapping.resource.demapping.mopp.DemappingResource.reload(DemappingResource.java:343)
 	at org.deltaecore.suite.mapping.resource.demapping.ui.DemappingBackgroundParsingStrategy$ParsingJob.run(DemappingBackgroundParsingStrategy.java:107)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:16:26.002
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.load(DeltajResource.java:570)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:57)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.doVisit(DeltajBuilderAdapter.java:113)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.visit(DeltajBuilderAdapter.java:96)
+	at org.eclipse.core.internal.resources.Resource.lambda$1(Resource.java:117)
+	at org.eclipse.core.internal.resources.Resource.lambda$0(Resource.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:135)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:55)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:117)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:105)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:16:26.009
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.load(DeltajResource.java:570)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:57)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.doVisit(DeltajBuilderAdapter.java:113)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.visit(DeltajBuilderAdapter.java:96)
+	at org.eclipse.core.internal.resources.Resource.lambda$1(Resource.java:117)
+	at org.eclipse.core.internal.resources.Resource.lambda$0(Resource.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:135)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:55)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:117)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:105)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2026-03-18 12:18:09.028
+!MESSAGE Did not encounter the UI thread in stack traces.
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2026-03-18 12:18:09.028
+!MESSAGE Did not encounter the UI thread in stack traces.
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2026-03-18 12:18:09.028
+!MESSAGE Did not encounter the UI thread in stack traces.
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2026-03-18 12:18:09.031
+!MESSAGE UI freeze of 2.1s at 12:18:06.969
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Sample at 12:18:07.935 (+0.966s)
+Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=253 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'Thread-12' tid=102 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'pool-2-thread-1' tid=67 (RUNNABLE)
+Holding: java.util.concurrent.ThreadPoolExecutor$Worker@18365e98
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'Java indexing' tid=65 (WAITING)
+Waiting for: org.eclipse.jdt.internal.core.search.indexing.IndexManager@106ef88e
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'Git Repository Closer' tid=61 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@328a87ef
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'Thread-3' tid=56 (WAITING)
+Waiting for: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3490af2b
+!STACK 0
+Stack Trace
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+	at org.eclipse.equinox.weaving.internal.caching.CacheWriter$1.run(CacheWriter.java:50)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'EMF Reference Cleaner' tid=52 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@358edbd4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'Worker-JM' tid=51 (WAITING)
+Waiting for: java.util.ArrayList@09b34563
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'SCR Component Actor' tid=49 (WAITING)
+Waiting for: java.util.LinkedList@38eb5a89
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=253 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@7c239eae
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Sample at 12:18:08.276 (+0.341s)
+Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=253 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'Thread-12' tid=102 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'pool-2-thread-1' tid=67 (RUNNABLE)
+Holding: java.util.concurrent.ThreadPoolExecutor$Worker@18365e98
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'Java indexing' tid=65 (WAITING)
+Waiting for: org.eclipse.jdt.internal.core.search.indexing.IndexManager@106ef88e
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'Git Repository Closer' tid=61 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@328a87ef
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'Thread-3' tid=56 (WAITING)
+Waiting for: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3490af2b
+!STACK 0
+Stack Trace
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+	at org.eclipse.equinox.weaving.internal.caching.CacheWriter$1.run(CacheWriter.java:50)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'EMF Reference Cleaner' tid=52 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@358edbd4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'Worker-JM' tid=51 (WAITING)
+Waiting for: java.util.ArrayList@09b34563
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'SCR Component Actor' tid=49 (WAITING)
+Waiting for: java.util.LinkedList@38eb5a89
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.031
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=253 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@7c239eae
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.032
+!MESSAGE Sample at 12:18:08.621 (+0.345s)
+Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=253 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.032
+!MESSAGE Thread 'Thread-12' tid=102 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.032
+!MESSAGE Thread 'pool-2-thread-1' tid=67 (RUNNABLE)
+Holding: java.util.concurrent.ThreadPoolExecutor$Worker@18365e98
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.032
+!MESSAGE Thread 'Java indexing' tid=65 (WAITING)
+Waiting for: org.eclipse.jdt.internal.core.search.indexing.IndexManager@106ef88e
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.032
+!MESSAGE Thread 'Git Repository Closer' tid=61 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@328a87ef
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.032
+!MESSAGE Thread 'Thread-3' tid=56 (WAITING)
+Waiting for: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3490af2b
+!STACK 0
+Stack Trace
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+	at org.eclipse.equinox.weaving.internal.caching.CacheWriter$1.run(CacheWriter.java:50)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.032
+!MESSAGE Thread 'EMF Reference Cleaner' tid=52 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@358edbd4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.032
+!MESSAGE Thread 'Worker-JM' tid=51 (WAITING)
+Waiting for: java.util.ArrayList@09b34563
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.032
+!MESSAGE Thread 'SCR Component Actor' tid=49 (WAITING)
+Waiting for: java.util.LinkedList@38eb5a89
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:18:09.032
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=253 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@7c239eae
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:19:46.243
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.load(DeltajResource.java:570)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajEditor.initializeResourceObject(DeltajEditor.java:165)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajEditor.doSetInput(DeltajEditor.java:142)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3179)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:436)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:352)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:2375)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2373)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3196)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3221)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:340)
+	at sun.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:967)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:331)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:107)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4561)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:661)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:790)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:404)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1266)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3195)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3100)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3098)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3068)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3059)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:569)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:524)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:363)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:170)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:285)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:251)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:381)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:553)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:802)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:799)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1115)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:275)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:270)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:310)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:19:46.407
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:19:58.081
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:20:04.563
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:19.317
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.load(DeltajResource.java:570)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:377)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajEditor$ModelResourceChangeListener$1ResourceDeltaVisitor.visit(DeltajEditor.java:85)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajEditor$ModelResourceChangeListener.resourceChanged(DeltajEditor.java:102)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2306)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5890)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:19.321
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_1_selectedGun. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.load(DeltajResource.java:570)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:377)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajEditor$ModelResourceChangeListener$1ResourceDeltaVisitor.visit(DeltajEditor.java:85)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajEditor$ModelResourceChangeListener.resourceChanged(DeltajEditor.java:102)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2306)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5890)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:19.556
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:19.557
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_1_selectedGun. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:20.080
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.load(DeltajResource.java:570)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:57)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.doVisit(DeltajBuilderAdapter.java:113)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.visit(DeltajBuilderAdapter.java:91)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:42)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:20.080
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_1_selectedGun. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.load(DeltajResource.java:570)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:57)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.doVisit(DeltajBuilderAdapter.java:113)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.visit(DeltajBuilderAdapter.java:91)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:42)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:20.084
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.load(DeltajResource.java:570)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:57)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.doVisit(DeltajBuilderAdapter.java:113)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.visit(DeltajBuilderAdapter.java:91)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:42)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:20.084
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_1_selectedMovement. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.load(DeltajResource.java:570)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:57)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.doVisit(DeltajBuilderAdapter.java:113)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.visit(DeltajBuilderAdapter.java:91)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:42)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:24.331
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:24.332
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_1_selectedGun. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:24.432
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:24.433
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_1_selectedGun. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:31.258
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:23:31.259
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_1_selectedGun. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2026-03-18 12:23:48.057
+!MESSAGE Did not encounter the UI thread in stack traces.
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2026-03-18 12:23:48.057
+!MESSAGE Did not encounter the UI thread in stack traces.
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2026-03-18 12:23:48.057
+!MESSAGE Did not encounter the UI thread in stack traces.
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2026-03-18 12:23:48.058
+!MESSAGE UI freeze of 2.4s at 12:23:45.639
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Sample at 12:23:46.527 (+0.888s)
+Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=309 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=253 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@7c239eae
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Thread 'Thread-12' tid=102 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Thread 'pool-2-thread-1' tid=67 (RUNNABLE)
+Holding: java.util.concurrent.ThreadPoolExecutor$Worker@18365e98
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Thread 'Java indexing' tid=65 (WAITING)
+Waiting for: org.eclipse.jdt.internal.core.search.indexing.IndexManager@106ef88e
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Thread 'Git Repository Closer' tid=61 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@328a87ef
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Thread 'Thread-3' tid=56 (WAITING)
+Waiting for: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3490af2b
+!STACK 0
+Stack Trace
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+	at org.eclipse.equinox.weaving.internal.caching.CacheWriter$1.run(CacheWriter.java:50)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Thread 'EMF Reference Cleaner' tid=52 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@358edbd4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Thread 'Worker-JM' tid=51 (WAITING)
+Waiting for: java.util.ArrayList@09b34563
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Thread 'SCR Component Actor' tid=49 (WAITING)
+Waiting for: java.util.LinkedList@38eb5a89
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=309 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@5acb3784
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Sample at 12:23:47.175 (+0.648s)
+Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=309 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=253 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@7c239eae
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.058
+!MESSAGE Thread 'Thread-12' tid=102 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.059
+!MESSAGE Thread 'pool-2-thread-1' tid=67 (RUNNABLE)
+Holding: java.util.concurrent.ThreadPoolExecutor$Worker@18365e98
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.059
+!MESSAGE Thread 'Java indexing' tid=65 (WAITING)
+Waiting for: org.eclipse.jdt.internal.core.search.indexing.IndexManager@106ef88e
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.059
+!MESSAGE Thread 'Git Repository Closer' tid=61 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@328a87ef
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.059
+!MESSAGE Thread 'Thread-3' tid=56 (WAITING)
+Waiting for: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3490af2b
+!STACK 0
+Stack Trace
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+	at org.eclipse.equinox.weaving.internal.caching.CacheWriter$1.run(CacheWriter.java:50)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.059
+!MESSAGE Thread 'EMF Reference Cleaner' tid=52 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@358edbd4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.059
+!MESSAGE Thread 'Worker-JM' tid=51 (WAITING)
+Waiting for: java.util.ArrayList@09b34563
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Thread 'SCR Component Actor' tid=49 (WAITING)
+Waiting for: java.util.LinkedList@38eb5a89
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=309 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@5acb3784
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Sample at 12:23:47.471 (+0.296s)
+Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=309 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=253 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@7c239eae
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Thread 'Thread-12' tid=102 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Thread 'pool-2-thread-1' tid=67 (RUNNABLE)
+Holding: java.util.concurrent.ThreadPoolExecutor$Worker@18365e98
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Thread 'Java indexing' tid=65 (WAITING)
+Waiting for: org.eclipse.jdt.internal.core.search.indexing.IndexManager@106ef88e
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Thread 'Git Repository Closer' tid=61 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@328a87ef
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Thread 'Thread-3' tid=56 (WAITING)
+Waiting for: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3490af2b
+!STACK 0
+Stack Trace
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+	at org.eclipse.equinox.weaving.internal.caching.CacheWriter$1.run(CacheWriter.java:50)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Thread 'EMF Reference Cleaner' tid=52 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@358edbd4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Thread 'Worker-JM' tid=51 (WAITING)
+Waiting for: java.util.ArrayList@09b34563
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Thread 'SCR Component Actor' tid=49 (WAITING)
+Waiting for: java.util.LinkedList@38eb5a89
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 12:23:48.060
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=309 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@5acb3784
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:25:42.605
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:25:42.608
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_1_selectedGun. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:26:31.236
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.load(DeltajResource.java:570)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:377)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajEditor$ModelResourceChangeListener$1ResourceDeltaVisitor.visit(DeltajEditor.java:85)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajEditor$ModelResourceChangeListener.resourceChanged(DeltajEditor.java:102)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2306)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5890)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:26:31.504
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:26:32.021
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.load(DeltajResource.java:570)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:57)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.doVisit(DeltajBuilderAdapter.java:113)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.visit(DeltajBuilderAdapter.java:91)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:42)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:26:32.023
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.load(DeltajResource.java:570)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:57)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.doVisit(DeltajBuilderAdapter.java:113)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.visit(DeltajBuilderAdapter.java:91)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajBuilderAdapter.build(DeltajBuilderAdapter.java:42)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:26:42.415
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY de.tu_bs.cs.isf.deltaj.resource.deltaj 4 0 2026-03-18 12:27:56.507
+!MESSAGE An expection occured while resolving the proxy for: EMFTEXT_INTERNAL_URI_FRAGMENT_0_jab. (java.lang.NullPointerException)
+!STACK 0
+java.lang.NullPointerException
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.findMatchingClassifiersInRequiredDeltas(ClassifierReferenceResolver.java:83)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.custom.ClassifierReferenceResolver.resolve(ClassifierReferenceResolver.java:36)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:99)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.analysis.ClassifierReferenceTargetReferenceResolver.resolve(ClassifierReferenceTargetReferenceResolver.java:1)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajContextDependentURIFragment.resolve(DeltajContextDependentURIFragment.java:52)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.getEObject(DeltajResource.java:387)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:209)
+	at org.eclipse.emf.ecore.util.EcoreUtil.resolve(EcoreUtil.java:269)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eResolveProxy(BasicEObjectImpl.java:1516)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.getTarget(ClassifierReferenceImpl.java:117)
+	at org.emftext.language.java.types.impl.ClassifierReferenceImpl.eGet(ClassifierReferenceImpl.java:172)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1050)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1042)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:439)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveCrossReferences(DeltajInterruptibleEcoreResolver.java:65)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:60)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.util.DeltajInterruptibleEcoreResolver.resolveAll(DeltajInterruptibleEcoreResolver.java:42)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.resolveAfterParsing(DeltajResource.java:575)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.mopp.DeltajResource.reload(DeltajResource.java:285)
+	at de.tu_bs.cs.isf.deltaj.resource.deltaj.ui.DeltajBackgroundParsingStrategy$ParsingJob.run(DeltajBackgroundParsingStrategy.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.emftext.language.java.resource.java 2 0 2026-03-18 14:22:57.909
+!MESSAGE Could not determine encoding of platform resource: platform:/resource/Module/src/jab/movement/RandomMovement.java
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Module/src/jab/movement/RandomMovement.java)[369]: java.lang.Exception: Resource '/Module/src/jab/movement/RandomMovement.java' is not local.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:342)
+	at org.eclipse.core.internal.resources.File.getCharset(File.java:194)
+	at org.eclipse.core.internal.resources.File.getCharset(File.java:184)
+	at org.emftext.language.java.resource.java.util.JavaEclipseProxy.getPlatformResourceEncoding(JavaEclipseProxy.java:159)
+	at org.emftext.language.java.resource.java.mopp.JavaResource.getEncoding(JavaResource.java:335)
+	at org.emftext.language.java.resource.JavaSourceOrClassFileResource.doSave(JavaSourceOrClassFileResource.java:421)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1475)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1044)
+	at de.christophseidl.util.ecore.EcoreIOUtil.saveResourceAs(EcoreIOUtil.java:430)
+	at de.tu_bs.cs.isf.deltajamopp.variant.DEVariantCreatorDeltaJ.createAndSaveVariantFromDeltas(DEVariantCreatorDeltaJ.java:115)
+	at de.tu_bs.cs.isf.deltajamopp.variant.DEVariantGeneratorDeltaJ.createAndSaveVariantFromConfiguration(DEVariantGeneratorDeltaJ.java:23)
+	at org.deltaecore.feature.graphical.configurator.editor.DEConfiguratorGraphicalEditor.generateVariant(DEConfiguratorGraphicalEditor.java:262)
+	at org.deltaecore.feature.graphical.configurator.editor.DEConfiguratorGraphicalEditor.access$9(DEConfiguratorGraphicalEditor.java:225)
+	at org.deltaecore.feature.graphical.configurator.editor.DEConfiguratorGraphicalEditor$8.widgetSelected(DEConfiguratorGraphicalEditor.java:191)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2026-03-18 14:22:57.909
+!MESSAGE Resource '/Module/src/jab/movement/RandomMovement.java' is not local.
+!STACK 0
+java.lang.Exception: Resource '/Module/src/jab/movement/RandomMovement.java' is not local.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:342)
+	at org.eclipse.core.internal.resources.File.getCharset(File.java:194)
+	at org.eclipse.core.internal.resources.File.getCharset(File.java:184)
+	at org.emftext.language.java.resource.java.util.JavaEclipseProxy.getPlatformResourceEncoding(JavaEclipseProxy.java:159)
+	at org.emftext.language.java.resource.java.mopp.JavaResource.getEncoding(JavaResource.java:335)
+	at org.emftext.language.java.resource.JavaSourceOrClassFileResource.doSave(JavaSourceOrClassFileResource.java:421)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1475)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1044)
+	at de.christophseidl.util.ecore.EcoreIOUtil.saveResourceAs(EcoreIOUtil.java:430)
+	at de.tu_bs.cs.isf.deltajamopp.variant.DEVariantCreatorDeltaJ.createAndSaveVariantFromDeltas(DEVariantCreatorDeltaJ.java:115)
+	at de.tu_bs.cs.isf.deltajamopp.variant.DEVariantGeneratorDeltaJ.createAndSaveVariantFromConfiguration(DEVariantGeneratorDeltaJ.java:23)
+	at org.deltaecore.feature.graphical.configurator.editor.DEConfiguratorGraphicalEditor.generateVariant(DEConfiguratorGraphicalEditor.java:262)
+	at org.deltaecore.feature.graphical.configurator.editor.DEConfiguratorGraphicalEditor.access$9(DEConfiguratorGraphicalEditor.java:225)
+	at org.deltaecore.feature.graphical.configurator.editor.DEConfiguratorGraphicalEditor$8.widgetSelected(DEConfiguratorGraphicalEditor.java:191)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2026-03-18 14:22:59.501
+!MESSAGE Did not encounter the UI thread in stack traces.
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2026-03-18 14:22:59.502
+!MESSAGE Did not encounter the UI thread in stack traces.
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2026-03-18 14:22:59.503
+!MESSAGE UI freeze of 1.6s at 14:22:57.900
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.503
+!MESSAGE Sample at 14:22:58.233 (+0.333s)
+Thread 'main' tid=1 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(WinNTFileSystem.java:428)
+	at java.io.File.getCanonicalPath(File.java:618)
+	at java.io.FilePermission$1.run(FilePermission.java:224)
+	at java.io.FilePermission$1.run(FilePermission.java:212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.io.FilePermission.init(FilePermission.java:212)
+	at java.io.FilePermission.<init>(FilePermission.java:299)
+	at sun.net.www.protocol.file.FileURLConnection.getPermission(FileURLConnection.java:228)
+	at sun.net.www.protocol.jar.JarFileFactory.getPermission(JarFileFactory.java:166)
+	at sun.net.www.protocol.jar.JarFileFactory.getCachedJarFile(JarFileFactory.java:136)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:91)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:122)
+	at sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:152)
+	at java.net.URL.openStream(URL.java:1067)
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:315)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:418)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:392)
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:112)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:486)
+	at org.aspectj.weaver.World.resolve(World.java:321)
+	at org.aspectj.weaver.World.resolve(World.java:231)
+	at org.aspectj.weaver.UnresolvedType.resolve(UnresolvedType.java:616)
+	at org.aspectj.weaver.JoinPointSignatureIterator.addSignaturesUpToFirstDefiningMember(JoinPointSignatureIterator.java:94)
+	at org.aspectj.weaver.JoinPointSignatureIterator.<init>(JoinPointSignatureIterator.java:49)
+	at org.aspectj.weaver.MemberImpl.getJoinPointSignatures(MemberImpl.java:515)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:319)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:56)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:56)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:56)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:113)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:158)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3328)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2904)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2697)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:483)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:103)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1656)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1421)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1195)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:551)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:387)
+	at org.eclipse.equinox.weaving.aspectj.loadtime.OSGiWeavingAdaptor.weaveClass(OSGiWeavingAdaptor.java:276)
+	at org.eclipse.equinox.weaving.aspectj.AspectJWeavingService.preProcess(AspectJWeavingService.java:154)
+	at org.eclipse.equinox.weaving.adaptors.WeavingAdaptor.weaveClass(WeavingAdaptor.java:241)
+	at org.eclipse.equinox.weaving.hooks.WeavingHook.processClass(WeavingHook.java:167)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.processClass(ClasspathManager.java:736)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:694)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:640)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:608)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:588)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:567)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1236)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:832)
+	at org.eclipse.jdt.internal.formatter.DefaultCodeFormatter.parseSourceCode(DefaultCodeFormatter.java:318)
+	at org.eclipse.jdt.internal.formatter.DefaultCodeFormatter.prepareFormattedCode(DefaultCodeFormatter.java:222)
+	at org.eclipse.jdt.internal.formatter.DefaultCodeFormatter.format(DefaultCodeFormatter.java:186)
+	at org.eclipse.jdt.internal.formatter.DefaultCodeFormatter.format(DefaultCodeFormatter.java:168)
+	at de.tu_bs.cs.isf.deltajamopp.variant.CodeFormattingHelper.formatCode(CodeFormattingHelper.java:25)
+	at de.tu_bs.cs.isf.deltajamopp.variant.DEVariantCreatorDeltaJ.formatSavedResource(DEVariantCreatorDeltaJ.java:164)
+	at de.tu_bs.cs.isf.deltajamopp.variant.DEVariantCreatorDeltaJ.createAndSaveVariantFromDeltas(DEVariantCreatorDeltaJ.java:116)
+	at de.tu_bs.cs.isf.deltajamopp.variant.DEVariantGeneratorDeltaJ.createAndSaveVariantFromConfiguration(DEVariantGeneratorDeltaJ.java:23)
+	at org.deltaecore.feature.graphical.configurator.editor.DEConfiguratorGraphicalEditor.generateVariant(DEConfiguratorGraphicalEditor.java:262)
+	at org.deltaecore.feature.graphical.configurator.editor.DEConfiguratorGraphicalEditor.access$9(DEConfiguratorGraphicalEditor.java:225)
+	at org.deltaecore.feature.graphical.configurator.editor.DEConfiguratorGraphicalEditor$8.widgetSelected(DEConfiguratorGraphicalEditor.java:191)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.ui.internal.Workbench$$Lambda$47/589094312.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.503
+!MESSAGE Sample at 14:22:58.758 (+0.525s)
+Thread 'Worker-83: Decoration Calculation' tid=411 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.503
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=330 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@7362a10a
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.503
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=309 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@5acb3784
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.503
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=253 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@7c239eae
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.503
+!MESSAGE Thread 'Thread-12' tid=102 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.503
+!MESSAGE Thread 'pool-2-thread-1' tid=67 (RUNNABLE)
+Holding: java.util.concurrent.ThreadPoolExecutor$Worker@18365e98
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Thread 'Java indexing' tid=65 (WAITING)
+Waiting for: org.eclipse.jdt.internal.core.search.indexing.IndexManager@106ef88e
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Thread 'Git Repository Closer' tid=61 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@328a87ef
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Thread 'Thread-3' tid=56 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.io.FileDescriptor.sync(Native Method)
+	at org.eclipse.equinox.weaving.internal.caching.CacheWriter.storeSingleClass(CacheWriter.java:124)
+	at org.eclipse.equinox.weaving.internal.caching.CacheWriter.store(CacheWriter.java:101)
+	at org.eclipse.equinox.weaving.internal.caching.CacheWriter$1.run(CacheWriter.java:52)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Thread 'EMF Reference Cleaner' tid=52 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@358edbd4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Thread 'Worker-JM' tid=51 (WAITING)
+Waiting for: java.util.ArrayList@09b34563
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Thread 'SCR Component Actor' tid=49 (WAITING)
+Waiting for: java.util.LinkedList@38eb5a89
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Thread 'Worker-83: Decoration Calculation' tid=411 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Sample at 14:22:59.118 (+0.360s)
+Thread 'Worker-83: Decoration Calculation' tid=411 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=330 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@7362a10a
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=309 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@5acb3784
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Thread 'org.eclipse.jface.text.reconciler.MonoReconciler' tid=253 (TIMED_WAITING)
+Waiting for: org.eclipse.jface.text.reconciler.DirtyRegionQueue@7c239eae
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Thread 'Thread-12' tid=102 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.504
+!MESSAGE Thread 'pool-2-thread-1' tid=67 (RUNNABLE)
+Holding: java.util.concurrent.ThreadPoolExecutor$Worker@18365e98
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.505
+!MESSAGE Thread 'Java indexing' tid=65 (WAITING)
+Waiting for: org.eclipse.jdt.internal.core.search.indexing.IndexManager@106ef88e
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.505
+!MESSAGE Thread 'Git Repository Closer' tid=61 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@328a87ef
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.505
+!MESSAGE Thread 'Thread-3' tid=56 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.eclipse.equinox.weaving.internal.caching.CacheWriter.storeSingleClass(CacheWriter.java:116)
+	at org.eclipse.equinox.weaving.internal.caching.CacheWriter.store(CacheWriter.java:101)
+	at org.eclipse.equinox.weaving.internal.caching.CacheWriter$1.run(CacheWriter.java:52)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.505
+!MESSAGE Thread 'EMF Reference Cleaner' tid=52 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@358edbd4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.505
+!MESSAGE Thread 'Worker-JM' tid=51 (WAITING)
+Waiting for: java.util.ArrayList@09b34563
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.505
+!MESSAGE Thread 'SCR Component Actor' tid=49 (WAITING)
+Waiting for: java.util.LinkedList@38eb5a89
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2026-03-18 14:22:59.505
+!MESSAGE Thread 'Worker-83: Decoration Calculation' tid=411 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

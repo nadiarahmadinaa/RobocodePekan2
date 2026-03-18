@@ -27,6 +27,7 @@
 			<alt abstract="true" mandatory="true" name="Movement">
 				<feature name="NoMovement"/>
 				<feature name="KeyboardMovement"/>
+				<feature name="RandomMovementFeature"/>
 				<alt abstract="true" name="AutoMovement">
 					<feature name="Cornering"/>
 					<feature name="Line"/>
@@ -41,6 +42,7 @@
 				<feature name="MaximumPowerGun"/>
 				<feature name="NoFireGun"/>
 				<feature name="MouseClickGun"/>
+				<feature name="MinimumPowerGunFeature"/>
 			</alt>
 		</and>
 	</struct>
