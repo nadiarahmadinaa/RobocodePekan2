@@ -1,0 +1,38 @@
+ configuration delta "AdaptivePowerGun"
+	dialect <http://www.emftext.org/java>
+		creates <jab/gun/AdaptivePower.java>
+		{
+	addClassifier(<resource:jab/gun/AdaptivePower.java>, "package jab.gun;
+
+		import jab.module.Gun;
+		import jab.module.Module;
+		import robocode.Bullet;
+		import robocode.Rules;
+
+		class AdaptivePower extends Gun {
+
+			public AdaptivePower(Module bot) {
+				super(bot);
+			}
+
+			public void fire() {
+				if (bot.enemy != null) {
+					double distance = bot.enemy.distance;
+					double bulletPower;
+					if (distance < 200) {
+						bulletPower = Math.min(Rules.MAX_BULLET_POWER, bot.getEnergy() - 0.01);
+					} else {
+						bulletPower = Math.min(1.5, bot.getEnergy() - 0.01);
+					}
+					if (bot.enemy.energy == 0) {
+						bulletPower = 0;
+					}
+					bot.bulletPower = bulletPower;
+					if (bot.getGunHeat() == 0) {
+						Bullet b = bot.setFireBullet(bulletPower);
+						bot.registerBullet(b);
+					}
+				}
+			}
+		}");
+	}

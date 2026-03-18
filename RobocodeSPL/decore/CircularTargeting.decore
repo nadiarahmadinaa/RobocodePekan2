@@ -1,0 +1,51 @@
+ configuration delta "CircularTargeting"
+	dialect <http://www.emftext.org/java>
+		creates <jab/targeting/Circular.java>
+		{
+	addClassifier(<resource:jab/targeting/Circular.java>, "package jab.targeting;
+
+		import jab.module.Module;
+		import jab.module.Targeting;
+		import robocode.util.Utils;
+
+		class Circular extends Targeting {
+
+			public Circular(Module bot) {
+				super(bot);
+			}
+
+			public void target() {
+				if (bot.enemy != null) {
+					double enemyX = bot.enemy.x;
+					double enemyY = bot.enemy.y;
+					double enemyHeading = bot.enemy.headingRadians;
+					double enemyHeadingChange = bot.enemy.headingRadians - bot.enemy.previousHeadingRadians;
+					double enemyVelocity = bot.enemy.velocity;
+
+					double deltaTime = 0;
+					double battleFieldHeight = bot.getBattleFieldHeight();
+					double battleFieldWidth = bot.getBattleFieldWidth();
+					double predictedX = enemyX;
+					double predictedY = enemyY;
+
+					while ((++deltaTime) * (20.0 - 3.0 * bot.bulletPower) <
+						java.awt.geom.Point2D.Double.distance(bot.getX(), bot.getY(), predictedX, predictedY)) {
+						enemyHeading += enemyHeadingChange;
+						predictedX += Math.sin(enemyHeading) * enemyVelocity;
+						predictedY += Math.cos(enemyHeading) * enemyVelocity;
+						if (predictedX < 18.0 || predictedY < 18.0
+								|| predictedX > battleFieldWidth - 18.0
+								|| predictedY > battleFieldHeight - 18.0) {
+							predictedX = Math.min(Math.max(18.0, predictedX), battleFieldWidth - 18.0);
+							predictedY = Math.min(Math.max(18.0, predictedY), battleFieldHeight - 18.0);
+							break;
+						}
+					}
+					double theta = Utils.normalAbsoluteAngle(
+						Math.atan2(predictedX - bot.getX(), predictedY - bot.getY()));
+					bot.setTurnGunRightRadians(
+						Utils.normalRelativeAngle(theta - bot.getGunHeadingRadians()));
+				}
+			}
+		}");
+	}

@@ -1,0 +1,33 @@
+package jab.movement;
+
+import robocode.HitWallEvent;
+import robocode.Event;
+import jab.module.Module;
+import jab.module.Movement;
+
+public class ZigZag extends Movement {
+
+	private int moveDirection = 1;
+	private int turnCounter = 0;
+
+	public ZigZag(Module bot) {
+		super(bot);
+	}
+
+	public void move() {
+		bot.setMaxVelocity(8);
+		turnCounter++;
+		if (turnCounter % 30 == 0) {
+			bot.setTurnRight(45 * moveDirection);
+			moveDirection *= -1;
+		}
+		bot.setAhead(10000);
+	}
+
+	public void listen(Event e) {
+		if (e instanceof HitWallEvent) {
+			moveDirection *= -1;
+			bot.setTurnRight(90 * moveDirection);
+		}
+	}
+}

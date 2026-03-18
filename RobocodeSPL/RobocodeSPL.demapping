@@ -3,3 +3,15 @@ RandomMovementFeature:
 
 MinimumPowerGunFeature:
 <decore/MinimumPowerGun.decore>
+
+ZigZagMovementFeature:
+<decore/ZigZagMovement.decore>
+
+CircularTargetingFeature:
+<decore/CircularTargeting.decore>
+
+RandomSelectEnemyFeature:
+<decore/RandomSelectEnemy.decore>
+
+AdaptivePowerGunFeature:
+<decore/AdaptivePowerGun.decore>

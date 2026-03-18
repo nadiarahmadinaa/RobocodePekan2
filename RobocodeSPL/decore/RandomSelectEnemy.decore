@@ -1,0 +1,35 @@
+ configuration delta "RandomSelectEnemy"
+	dialect <http://www.emftext.org/java>
+		creates <jab/selectEnemy/RandomSelect.java>
+		{
+	addClassifier(<resource:jab/selectEnemy/RandomSelect.java>, "package jab.selectEnemy;
+
+		import java.util.ArrayList;
+		import java.util.List;
+		import java.util.Random;
+		import jab.module.BotInfo;
+		import jab.module.Module;
+		import jab.module.SelectEnemy;
+
+		class RandomSelect extends SelectEnemy {
+
+			private Random random = new Random();
+
+			public RandomSelect(Module bot) {
+				super(bot);
+			}
+
+			public void select() {
+				List enemies = new ArrayList();
+				for (Object obj : bot.botsInfo.values()) {
+					BotInfo botInfo = (BotInfo) obj;
+					if (!botInfo.teammate) {
+						enemies.add(botInfo);
+					}
+				}
+				if (!enemies.isEmpty()) {
+					bot.enemy = (BotInfo) enemies.get(random.nextInt(enemies.size()));
+				}
+			}
+		}");
+	}

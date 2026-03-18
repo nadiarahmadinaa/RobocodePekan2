@@ -4,6 +4,10 @@
     <groups maxCardinality="2">
       <features maxCardinality="1" name="RandomMovementFeature"/>
       <features maxCardinality="1" name="MinimumPowerGunFeature"/>
+      <features maxCardinality="1" name="ZigZagMovementFeature"/>
+      <features maxCardinality="1" name="CircularTargetingFeature"/>
+      <features maxCardinality="1" name="RandomSelectEnemyFeature"/>
+      <features maxCardinality="1" name="AdaptivePowerGunFeature"/>
     </groups>
   </rootFeature>
 </feature:DEFeatureModel>
