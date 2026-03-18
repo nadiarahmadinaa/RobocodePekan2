@@ -1,0 +1,30 @@
+delta MaximumPowerGun {
+
+	adds {
+		package jab.gun;
+
+		import jab.module.Gun;
+		import jab.module.Module;
+		import robocode.Bullet;
+		import robocode.Rules;
+
+		class MaximumPower extends Gun {
+
+			public MaximumPower(Module bot) {
+				super(bot);
+			}
+
+			public void fire() {
+				if (bot.enemy != null) {
+					double bulletPower = Rules.MAX_BULLET_POWER;
+					bot.bulletPower = bulletPower;
+					if (bot.getGunHeat() == 0) {
+						Bullet b = bot.setFireBullet(bulletPower);
+						bot.registerBullet(b);
+					}
+				}
+			}
+		}
+	}
+
+}

@@ -15,3 +15,15 @@ RandomSelectEnemyFeature:
 
 AdaptivePowerGunFeature:
 <decore/AdaptivePowerGun.decore>
+
+PerpendicularMovementFeature:
+<decore/PerpendicularMovement.decore>
+
+LinearTargetingFeature:
+<decore/LinearTargeting.decore>
+
+ClosestSelectEnemyFeature:
+<decore/ClosestSelectEnemy.decore>
+
+MaximumPowerGunFeature:
+<decore/MaximumPowerGun.decore>

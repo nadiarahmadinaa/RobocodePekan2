@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="ASCII"?>
 <feature:DEFeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:feature="http://deltaecore.org/feature/1.0">
   <rootFeature minCardinality="1" maxCardinality="1" name="RootFeature">
-    <groups maxCardinality="2">
+    <groups maxCardinality="4">
       <features maxCardinality="1" name="RandomMovementFeature"/>
       <features maxCardinality="1" name="MinimumPowerGunFeature"/>
       <features maxCardinality="1" name="ZigZagMovementFeature"/>
       <features maxCardinality="1" name="CircularTargetingFeature"/>
       <features maxCardinality="1" name="RandomSelectEnemyFeature"/>
       <features maxCardinality="1" name="AdaptivePowerGunFeature"/>
+      <features maxCardinality="1" name="PerpendicularMovementFeature"/>
+      <features maxCardinality="1" name="LinearTargetingFeature"/>
+      <features maxCardinality="1" name="ClosestSelectEnemyFeature"/>
+      <features maxCardinality="1" name="MaximumPowerGunFeature"/>
     </groups>
   </rootFeature>
 </feature:DEFeatureModel>

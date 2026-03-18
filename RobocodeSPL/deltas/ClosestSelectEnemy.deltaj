@@ -1,0 +1,33 @@
+delta ClosestSelectEnemy {
+
+	adds {
+		package jab.selectEnemy;
+
+		import jab.module.BotInfo;
+		import jab.module.Module;
+		import jab.module.SelectEnemy;
+
+		class ClosestSelect extends SelectEnemy {
+
+			public ClosestSelect(Module bot) {
+				super(bot);
+			}
+
+			public void select() {
+				double minDistance = Double.MAX_VALUE;
+				for (Object obj : bot.botsInfo.values()) {
+					BotInfo botInfo = (BotInfo) obj;
+					if (!botInfo.teammate) {
+						double distance = java.awt.geom.Point2D.Double.distance(
+							bot.getX(), bot.getY(), botInfo.x, botInfo.y);
+						if (distance < minDistance) {
+							minDistance = distance;
+							bot.enemy = botInfo;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
