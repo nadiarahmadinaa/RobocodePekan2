@@ -12,6 +12,8 @@
       <features maxCardinality="1" name="LinearTargetingFeature"/>
       <features maxCardinality="1" name="ClosestSelectEnemyFeature"/>
       <features maxCardinality="1" name="MaximumPowerGunFeature"/>
+      <features maxCardinality="1" name="SpreadTargetingFeature"/>
+      <features maxCardinality="1" name="MostDangerousSelectEnemyFeature"/>
     </groups>
   </rootFeature>
 </feature:DEFeatureModel>

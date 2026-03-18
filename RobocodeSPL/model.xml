@@ -24,6 +24,7 @@
 				<feature name="LinearTargeting"/>
 				<feature name="MouseTargeting"/>
 				<feature name="CircularTargetingFeature"/>
+				<feature name="SpreadTargetingFeature"/>
 			</alt>
 			<alt abstract="true" mandatory="true" name="Movement">
 				<feature name="NoMovement"/>
@@ -40,6 +41,7 @@
 				<feature name="StrongestSelectEnemy"/>
 				<feature name="ClosestSelectEnemy"/>
 				<feature name="RandomSelectEnemyFeature"/>
+				<feature name="MostDangerousSelectEnemyFeature"/>
 			</alt>
 			<alt abstract="true" mandatory="true" name="Gun">
 				<feature name="MaximumPowerGun"/>

@@ -27,3 +27,9 @@ ClosestSelectEnemyFeature:
 
 MaximumPowerGunFeature:
 <decore/MaximumPowerGun.decore>
+
+SpreadTargetingFeature:
+<decore/SpreadTargeting.decore>
+
+MostDangerousSelectEnemyFeature:
+<decore/MostDangerousSelectEnemy.decore>

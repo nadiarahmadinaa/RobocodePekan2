@@ -1,0 +1,33 @@
+package jab.selectEnemy;
+
+import java.util.Iterator;
+import jab.module.BotInfo;
+import jab.module.Module;
+import jab.module.SelectEnemy;
+
+/**
+ * Selects the most dangerous enemy based on energy/distance ratio.
+ */
+public class MostDangerous extends SelectEnemy {
+
+	public MostDangerous(Module bot) {
+		super(bot);
+	}
+
+	public void select() {
+		Iterator<BotInfo> iterator = bot.botsInfo.values().iterator();
+		double maxThreat = -1;
+		BotInfo selected = null;
+		while (iterator.hasNext()) {
+			BotInfo e = iterator.next();
+			if (!e.teammate && e.distance > 0) {
+				double threat = e.energy / e.distance;
+				if (threat > maxThreat) {
+					selected = e;
+					maxThreat = threat;
+				}
+			}
+		}
+		bot.enemy = selected;
+	}
+}
